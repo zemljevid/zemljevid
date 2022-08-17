@@ -2,7 +2,7 @@ import { AppProps } from 'next/app';
 import Head from 'next/head';
 import '@fontsource/inter';
 import '../main.css';
-import Navbar from '../components/navbar';
+import Menu from '../components/menu';
 
 function CustomApp({ Component, pageProps }: AppProps) {
   return (
@@ -11,8 +11,8 @@ function CustomApp({ Component, pageProps }: AppProps) {
         <title>Welcome to web!</title>
       </Head>
       <main className="flex flex-col min-h-screen">
-        <Navbar />
         <Component {...pageProps} />
+        <Menu />
       </main>
     </>
   );
